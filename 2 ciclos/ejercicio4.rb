@@ -7,10 +7,15 @@
 # <li> hola </li>
 # </ul>
 
-a = 5
+a = 7
 b = ''
 
-a.times do
-  b = '<li> hola </li>'
+a.times do |i|
+  if i == 0 || i == 6
+  	b+="<ul>\n"
+  else
+  b += "\t<li> hola </li>\n"
+  end
 end
 
+puts b

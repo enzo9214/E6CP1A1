@@ -24,3 +24,11 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+puts "<table>\n<tbody>"
+for i in 1..12
+  puts "<tr>" if i == 1 || i == 5 || i == 9
+  puts "\t<td> #{i} </td>"
+  puts "</tr>" if i == 4 || i == 8 || i == 12
+end 
+puts "</table>\n</tbody>"

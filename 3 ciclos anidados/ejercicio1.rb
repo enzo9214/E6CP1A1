@@ -5,3 +5,12 @@ Se pide imprimir la secuencia numérica, de la siguiente forma:
 3   6   9   12
 4   8   12   16
 =end
+
+for i in 1..4
+	for c in 1..4
+		print i*c
+		print " "
+	end	
+	puts "\n"
+end
+
